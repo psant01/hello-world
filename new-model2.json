@@ -1,0 +1,1539 @@
+{
+  "summary": {
+    "title": "New Threat Model",
+    "owner": "Ifra Rasheed",
+    "description": "Designed for money 4U"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "The class of CIS098-6",
+        "$$hashKey": "object:57"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "money4u",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0,
+        "$$hashKey": "object:67",
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 12,
+                "y": 499
+              },
+              "angle": 0,
+              "id": "6a2c9390-ac3a-4f30-ab25-a24c22fdc396",
+              "z": 1,
+              "hasOpenThreats": false,
+              "storesCredentials": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "HQ database"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 257,
+                "y": 506
+              },
+              "angle": 0,
+              "id": "38cc8438-23f8-4bd9-adef-a7929051e40c",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Regional Database"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 497,
+                "y": 504
+              },
+              "angle": 0,
+              "id": "061f1747-7825-480a-bc92-20689095f262",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "MSQL database"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 704,
+                "y": 506
+              },
+              "angle": 0,
+              "id": "0519feeb-169c-4a3c-a34a-62dbb62f5c63",
+              "z": 4,
+              "hasOpenThreats": false,
+              "description": "For the details of financial transactions.",
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Bank Account"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 961,
+                "y": 505
+              },
+              "angle": 0,
+              "id": "a2be1cc5-6f0d-479d-8379-f313cd502055",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Policies"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1184,
+                "y": 507
+              },
+              "angle": 0,
+              "id": "d1eda8ff-c042-4cd2-834b-d0ac2dd2e017",
+              "z": 7,
+              "hasOpenThreats": false,
+              "storesCredentials": true,
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Off-Site Email Server"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 1166,
+                "y": 173
+              },
+              "angle": 0,
+              "id": "8263d761-6cce-4211-843a-f5c0820ef8a1",
+              "z": 12,
+              "hasOpenThreats": false,
+              "description": "Authorize a person for the transaction of money after validating its credentials.",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "AuthZ\nTransaction"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 56,
+                "y": 47
+              },
+              "angle": 0,
+              "id": "a4e6e672-119b-4975-9acc-85e4ca7daf5a",
+              "z": 15,
+              "hasOpenThreats": false,
+              "description": "Customers who need to create an account by loggin on to the system.",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Browser/Customer"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 412,
+                "y": 28
+              },
+              "angle": 0,
+              "id": "530f8019-a6dd-4dc2-9917-86aa57c50ed4",
+              "z": 16,
+              "hasOpenThreats": false,
+              "description": "Customer will create an account by providing details in order to transfer money.",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Account\nCreation\nProcess"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 215,
+                "y": 66
+              },
+              "target": {
+                "x": 410,
+                "y": 70
+              },
+              "vertices": [
+                {
+                  "x": 317,
+                  "y": 67
+                }
+              ],
+              "id": "0249c990-de80-4212-874e-54067c3db112",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.4744085078517713,
+                    "offset": -0.3933502814461782
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Account Request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 17,
+              "hasOpenThreats": false,
+              "description": "User will request to create an account.",
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 416,
+                "y": 108
+              },
+              "target": {
+                "x": 215,
+                "y": 108
+              },
+              "vertices": [],
+              "id": "0775bc4e-621a-4c10-89c7-54b70d0219cc",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Account Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 18,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "530f8019-a6dd-4dc2-9917-86aa57c50ed4"
+              },
+              "target": {
+                "x": 609,
+                "y": 503
+              },
+              "vertices": [],
+              "id": "b8e84c3a-7ead-44ef-8ca5-de27608992be",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.523113447064733,
+                    "offset": -27.293508137245023
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Add user account\ndetails",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 19,
+              "hasOpenThreats": false,
+              "description": "Add all the customers' details  such as personal and account details and address in to the local database.",
+              "isEncrypted": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 462,
+                "y": 121
+              },
+              "target": {
+                "x": 581,
+                "y": 501
+              },
+              "vertices": [],
+              "id": "95205507-8007-46a1-9bea-32abc34cf004",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.1928006741034206,
+                    "offset": 6.6967369472413765
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Details added\nconfirmation",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "hasOpenThreats": false,
+              "description": "All the details are successfully added in the local database.",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 665,
+                "y": 37
+              },
+              "angle": 0,
+              "id": "1352f03f-f58a-4979-ab23-f7458bf81079",
+              "z": 21,
+              "hasOpenThreats": false,
+              "description": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Desktop Application"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 513,
+                "y": 78
+              },
+              "target": {
+                "id": "1352f03f-f58a-4979-ab23-f7458bf81079"
+              },
+              "vertices": [],
+              "id": "08b1c117-8b1c-4ecd-af11-d883f4102f41",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Money Transfer\nthrough app",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 23,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 992,
+                "y": 21
+              },
+              "angle": 0,
+              "id": "9ac87096-8c35-4ff9-9c0c-8ca5130edb52",
+              "z": 24,
+              "hasOpenThreats": false,
+              "description": "Deals with and processes transfer request made through the desktop app .",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Aplication\nProcessor"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 828,
+                "y": 64
+              },
+              "target": {
+                "id": "9ac87096-8c35-4ff9-9c0c-8ca5130edb52"
+              },
+              "vertices": [],
+              "id": "673ded3c-fc09-4100-9630-a6f5bfd515ec",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Data reterival/store\nrequest",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 25,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 990,
+                "y": 92
+              },
+              "target": {
+                "x": 835,
+                "y": 91
+              },
+              "vertices": [],
+              "id": "53814093-1712-485a-8043-6bea3cdf4bc9",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Request response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 26,
+              "hasOpenThreats": false,
+              "description": "Response of the given request that confirms outcome",
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 904,
+                "y": 180
+              },
+              "angle": 0,
+              "id": "e5b6cd0d-5e3e-4141-a3ed-7b8b68950163",
+              "z": 27,
+              "hasOpenThreats": false,
+              "description": "User enter credentials such as email od and password to transfer money.",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "AuthN User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 1003,
+                "y": 218
+              },
+              "target": {
+                "x": 1164,
+                "y": 217
+              },
+              "vertices": [],
+              "id": "4b1b7fd2-b14e-4c8f-86e0-6fb6ae7ead10",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Transaction request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 28,
+              "hasOpenThreats": false,
+              "description": "Cusmoter authenticate himself to transfer money.",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 1165,
+                "y": 245
+              },
+              "target": {
+                "x": 1003,
+                "y": 245
+              },
+              "vertices": [],
+              "id": "2f9d331b-fe11-471c-a91a-84172409357d",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Authorize User",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 29,
+              "hasOpenThreats": false,
+              "description": "User is allowed to transfer money based on the verification of credentials.",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 1033,
+                "y": 122
+              },
+              "target": {
+                "x": 962,
+                "y": 180
+              },
+              "vertices": [],
+              "id": "3ec55e11-5f1b-4e08-ad83-22bc89a3f6f7",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Transaction Request\nIdentification",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 30,
+              "hasOpenThreats": false,
+              "description": "User has to be identified by the credentials before the transaction takes place.",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 737,
+                "y": 245
+              },
+              "angle": 0,
+              "id": "f2b7566f-d5f3-4d34-91a5-7a666e2add3b",
+              "z": 31,
+              "hasOpenThreats": false,
+              "description": "Transaction takes place",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Perform\nTransaction"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "a2be1cc5-6f0d-479d-8379-f313cd502055"
+              },
+              "target": {
+                "x": 819,
+                "y": 334
+              },
+              "vertices": [],
+              "id": "820302cb-12dd-4d0f-96ec-bdc8a2e196c1",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Transaction Policy",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 32,
+              "hasOpenThreats": false,
+              "description": "There will be the rules and policies set by the company to set money. These policies should be taken in considerations.",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 858,
+                "y": 502
+              },
+              "target": {
+                "x": 933,
+                "y": 281
+              },
+              "vertices": [],
+              "id": "d87b8bd9-66c7-4621-a59b-fa19c0d46aac",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.8332263248961183,
+                    "offset": -2.272856429893535
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Account Balance",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 34,
+              "hasOpenThreats": false,
+              "description": "Account balance are checked before transaction.",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "f2b7566f-d5f3-4d34-91a5-7a666e2add3b"
+              },
+              "target": {
+                "x": 791,
+                "y": 505
+              },
+              "vertices": [],
+              "id": "953a0e34-8ecc-42c4-8fc0-cb38186a84bd",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.535321633518754,
+                    "offset": -13.19266208937946
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "New Balance",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 35,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "530f8019-a6dd-4dc2-9917-86aa57c50ed4"
+              },
+              "target": {
+                "x": 389,
+                "y": 504
+              },
+              "vertices": [
+                {
+                  "x": 383,
+                  "y": 288
+                }
+              ],
+              "id": "075a1d1f-34bf-4fb7-b515-e564c3c04049",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Add Customer\ncredentials to DB",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 37,
+              "hasOpenThreats": false,
+              "description": "Regional database contains all the details of the customers.",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 735,
+                "y": 308
+              },
+              "target": {
+                "x": 91,
+                "y": 496
+              },
+              "vertices": [
+                {
+                  "x": 412,
+                  "y": 415
+                }
+              ],
+              "id": "620d1f32-9509-4e76-9255-a72758d87152",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.8443649421388876,
+                    "offset": -5.986118470768732
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Transaction Details",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 38,
+              "hasOpenThreats": false,
+              "description": "Transaction details are send to HQbecause HQ keeps record of daily transactions",
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "File Transfer Protocol",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 743,
+                "y": 323
+              },
+              "target": {
+                "x": 523,
+                "y": 503
+              },
+              "vertices": [],
+              "id": "e4558a13-3464-4a48-aa5e-ed4f2084925b",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.3012766315883852,
+                    "offset": 2.81280230315855
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Transaction details",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 39,
+              "hasOpenThreats": false,
+              "description": "Transaction details are saved in the local store.",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 736,
+                "y": 294
+              },
+              "target": {
+                "x": 351,
+                "y": 505
+              },
+              "vertices": [],
+              "id": "28ee3e61-bd1d-4d1d-9758-b7bd9df2a801",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5963346496199828,
+                    "offset": 2.1038616699419213
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Transaction details",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 40,
+              "hasOpenThreats": false,
+              "description": "Details of the money tansaction stored in the data base of the city.",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 1245,
+                "y": 506
+              },
+              "target": {
+                "x": 839,
+                "y": 306
+              },
+              "vertices": [
+                {
+                  "x": 1111,
+                  "y": 471
+                }
+              ],
+              "id": "16b418a5-2c77-4751-8684-700cd5734dad",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Verified Transaction",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 42,
+              "hasOpenThreats": false,
+              "description": "Off site server verified the credentials and allow transaction.",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "8263d761-6cce-4211-843a-f5c0820ef8a1"
+              },
+              "target": {
+                "x": 1314,
+                "y": 506
+              },
+              "vertices": [],
+              "id": "dc211b9a-1c15-443a-ad2e-4bef184fa25b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Request Verification",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 43,
+              "hasOpenThreats": false,
+              "description": "There is no service for transaction in house therefore, transaction are set to an off site service.",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 57,
+                "y": 202
+              },
+              "angle": 0,
+              "id": "6ff6545e-ca84-46e1-9542-e2be4954d5de",
+              "z": 44,
+              "hasOpenThreats": false,
+              "description": "Staff Members who will perform transaction on their customers' behalf.",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Staff Member"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "6ff6545e-ca84-46e1-9542-e2be4954d5de"
+              },
+              "target": {
+                "x": 672,
+                "y": 119
+              },
+              "vertices": [
+                {
+                  "x": 561,
+                  "y": 131
+                }
+              ],
+              "id": "468fd0b5-87dc-4380-9114-c2f3cf702af0",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.8566623181248868,
+                    "offset": 2.8623525003727797
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Login Request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 45,
+              "hasOpenThreats": false,
+              "description": "Staff member request login to get access to desktop application for transaction.",
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 762,
+                "y": 502
+              },
+              "target": {
+                "x": 762,
+                "y": 340
+              },
+              "vertices": [],
+              "id": "1b33705a-da47-4ae7-91d7-72b8e612cb37",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.6372674107551575,
+                    "offset": -6
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Account Balance",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 46,
+              "hasOpenThreats": false,
+              "description": "the details of the account balance is checked before transaction",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 660,
+                "y": 96
+              },
+              "target": {
+                "x": 218,
+                "y": 257
+              },
+              "vertices": [],
+              "id": "3fc146b1-6006-41e8-aef0-79e18770e312",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.7499129016659353,
+                    "offset": 2.4420337570086845
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Login Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 47,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 22,
+                "y": 609
+              },
+              "angle": 0,
+              "id": "83829d64-d08b-44db-95a3-1dacb600c7da",
+              "z": 48,
+              "hasOpenThreats": false,
+              "description": "store image and local staff remote profiles",
+              "storesCredentials": true,
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "VMWare Server"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 73,
+                "y": 283
+              },
+              "target": {
+                "x": 73,
+                "y": 606
+              },
+              "vertices": [],
+              "id": "5a1a325f-ab47-408f-8085-5e3c3b3a76a3",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.3005257248878479,
+                    "offset": -3
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Store Staff\nCredentials",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 49,
+              "hasOpenThreats": false,
+              "description": "Staff who wants to work remotely.",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 183,
+                "y": 281
+              },
+              "target": {
+                "x": 316,
+                "y": 505
+              },
+              "vertices": [],
+              "id": "211b82a0-aec0-466d-9ff3-71d2e4fbdb5b",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.48492037558125795,
+                    "offset": -40.652957134791286
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Add Staff credentials\nto RG DB",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 55,
+              "hasOpenThreats": false,
+              "description": "All the details of the staff is added",
+              "isPublicNetwork": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 285,
+                "y": 504
+              },
+              "target": {
+                "id": "6ff6545e-ca84-46e1-9542-e2be4954d5de"
+              },
+              "vertices": [
+                {
+                  "x": 160,
+                  "y": 317
+                }
+              ],
+              "id": "1990396c-e5e7-4c22-ad47-a887d7e892e0",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.842950616356188,
+                    "offset": -29.14919961042928
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Credentials added",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 56,
+              "hasOpenThreats": false,
+              "description": "Confirmation of data added in the DB",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 1053,
+          "width": 2521
+        }
+      }
+    ],
+    "reviewer": "University of Bedfordshire"
+  }
+}
