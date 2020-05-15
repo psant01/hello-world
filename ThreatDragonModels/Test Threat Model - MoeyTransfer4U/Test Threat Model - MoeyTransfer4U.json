@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "Test Threat Model - MoeyTransfer4U",
+    "owner": "Dr Paul Sant",
+    "description": "A simple sample threat model that we can use in order to see how the web app stores models"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Dr Paul Sant"
+  }
+}
