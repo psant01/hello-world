@@ -8,3 +8,6 @@ I have now made a change to this readme to make it more accessible.
 
 # Edit 24/10/2023
 I have learned a little more about GitHub and so have placed some more information in this work
+
+# New edit - 24/10
+Everyone is happy with changes but one team member has suggested some additional changes which have now been incorporated.
